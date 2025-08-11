@@ -39,7 +39,7 @@ public class KeyboardHandler
             EntityPlayer player =Minecraft.getMinecraft().player;
             EntityBender<EntityLivingBase> entityBender = EntityBenderRegistry.instance.getForEntity(player);
             if (entityBender!=null){
-                entityBender.setAnimate(!entityBender.isAnimated())
+                entityBender.setAnimate(!entityBender.isAnimated());
             }
         }
     }
