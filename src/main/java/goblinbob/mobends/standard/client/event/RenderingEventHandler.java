@@ -25,8 +25,6 @@ public class RenderingEventHandler
 
         if (!BenderHelper.isEntityAnimated(player))
         	return;
-        if (player.isSprinting())
-            return;
 
         RenderPlayer renderPlayer = (RenderPlayer) mc.getRenderManager().<AbstractClientPlayer>getEntityRenderObject(player);
         PlayerMutator mutator = (PlayerMutator) BenderHelper.getMutatorForRenderer(AbstractClientPlayer.class, renderPlayer);
