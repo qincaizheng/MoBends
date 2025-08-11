@@ -26,7 +26,7 @@ public class EntityRenderHandler
 
         GlStateManager.pushMatrix();
 
-        if (entityBender.isAnimated()||!living.isSprinting())
+        if (entityBender.isAnimated()&&!living.isSprinting())
         {
             if (entityBender.applyMutation(renderer, living, pt))
             {
